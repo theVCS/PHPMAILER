@@ -2,14 +2,13 @@
 
 // set location of the file
 require "PHPMailerAutoload.php";
-
 // function which will send email
 function smtpmailer($to, $from, $from_name, $subject, $body)
 {
     $mail = new PHPMailer();
     $mail->SMTPAuth = true;
 
-    // host info can be found under the section of the add devices in email section
+    // host information can be found under the section of the add devices in Email section
     $mail->SMTPSecure = 'tls';
     $mail->Host = 'host from which you are sending a mail';
     $mail->Port = 465;  // should be checked from the host info
