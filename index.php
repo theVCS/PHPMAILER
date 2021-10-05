@@ -38,6 +38,5 @@ $name = 'Name of Sender';
 $subj = 'Subject Of The Mail';
 $msg = 'Your Message';
 
-// if there will be an error then it will be $error = false otherwise will be true
 $error = smtpmailer($to, $from, $name, $subj, $msg);
 ?>
